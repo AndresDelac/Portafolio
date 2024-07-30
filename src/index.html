@@ -26,7 +26,7 @@
             <h1 class="text-6xl font-quicksand font-bold">Hola, soy Andres</h1>
             <p class="mt-8 text-3xl mx-72 text-center text-gray-600 font-sans font-medium ">Desarrollador web junior, con  <span class="text-cyan-500">especializacion en Front-end. </span><span class="text-green-500">De Cali, Colombia.</span> Apasionado por el mundo IT, gracias por estar aqui!</p>
 
-            <div class="mt-10 border border-cyan-500 p-2 rounded-xl bg-green-300 hover:font-semibold  ease-in-out 3000">
+            <div class="mt-10 border border-cyan-500 p-2 rounded-xl bg-green-300 hover:font-semibold  transition ease-in-out duration-300">
                <p class="font-quicksand text-base">Disponible para trabajar</p> 
             </div>
         </section>
@@ -68,7 +68,7 @@
          
         <section id="projects" class="my-24">
             <h1 class="text-4xl font-quicksand font-bold my-10">Mis Proyectos</h1>
-            <div class="flex flex-col gap-4 mt-5 mx-12">
+            <div class="flex flex-col gap-4 mt-5 mx-12 space-y-8">
                 <div class="bg-white p-4 rounded shadow flex flex-col md:flex-row items-center space-x-10 ">
                     <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/29352506-12d0-485a-9b7b-df20ab5a24d8/deio537-435c73dd-a224-4404-8302-46b15367a109.jpg/v1/fill/w_670,h_1192,q_70,strp/aesthetic_wallpaper_anime_by_rzo9880_deio537-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTkyMCIsInBhdGgiOiJcL2ZcLzI5MzUyNTA2LTEyZDAtNDg1YS05YjdiLWRmMjBhYjVhMjRkOFwvZGVpbzUzNy00MzVjNzNkZC1hMjI0LTQ0MDQtODMwMi00NmIxNTM2N2ExMDkuanBnIiwid2lkdGgiOiI8PTEwODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.-mbMWqGHrlGnDUicp1idL5H7wAu9sQ0T2T_nx0K8Hds" alt="Proyecto 1" 
                     class="w-full md:w-1/3 max-h-72 object-cover rounded">
@@ -89,35 +89,63 @@
                             </a>
                         </div>
                         
+                        <div class="relative group">
+                            <button class="border border-cyan-600 hover:bg-gray-200 rounded-xl p-1 flex items-center">
+                                <span class="ml-2">Tecnologías</span>
+                                <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <ul class="p-2">
+                                    <li class="py-1 px-2 hover:bg-gray-100">HTML</li>
+                                    <li class="py-1 px-2 hover:bg-gray-100">CSS</li>
+                                    <li class="py-1 px-2 hover:bg-gray-100">JavaScript</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-
-                    </div>
-
                 </div>
+            </div>
+
                 <div class="bg-white p-4 rounded shadow flex flex-col md:flex-row items-center space-x-10">
                     <img src="https://img.freepik.com/free-photo/japan-background-digital-art_23-2151546131.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1722124800&semt=ais_user" alt="Proyecto 2" 
                     class="w-full md:w-1/3 max-h-72 object-cover rounded">
                     <div class="mt-4 md:mt-0 md:ml-4">
                         <h2 class="text-3xl font-quicksand font-semibold uppercase">Web de peliculas</h2>
                         <p class="mt-2 max-w-[40vw] my-4 font-sans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, ullam? Nemo dolores aliquam tempore doloribus ducimus voluptates, dolorum nam eligendi repudiandae, tempora ipsum id dignissimos voluptatum natus quibusdam. Nesciunt, maxime!</p>
-
                         <div class="flex flex-row space-x-1 items-center">    
                             <div class="flex flex-row border items-center border-cyan-600 hover:bg-gray-200 rounded-xl p-1">
                                 <svg 
                                 class="h-9 w-9 m-2 "
                                 xmlns="http://www.w3.org/2000/svg" 
                                 viewBox="0 0 496 512">
-                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
-                            </svg>
-                            <a href="https://github.com/usuario/proyecto1" class="text-green-700 font-quicksand font-medium">
-                            Repositorio 
-                            </a>
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                                <a href="https://github.com/usuario/proyecto1" class="text-green-700 font-quicksand font-medium">
+                                    Repositorio 
+                                </a>
+                            </div>
+                            <div class="relative group">
+                                <button class="border border-cyan-600 hover:bg-gray-200 rounded-xl p-1 flex items-center">
+                                    <span class="ml-2">Tecnologías</span>
+                                    <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+                                <div class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <ul class="p-2">
+                                        <li class="py-1 px-2 hover:bg-gray-100">HTML</li>
+                                        <li class="py-1 px-2 hover:bg-gray-100">Bootstrap</li>
+                                        <li class="py-1 px-2 hover:bg-gray-100">JavaScript</li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        
-                    </div>
-
                     </div>
                 </div>
+        
+
                 <div class="bg-white p-4 rounded shadow flex flex-col md:flex-row items-center space-x-10">
                     <img src="https://i.pinimg.com/736x/58/71/75/587175a3cde8a45420b81f61a2f25254.jpg" alt="Proyecto 3" 
                     class="w-full md:w-1/3 max-h-72 object-cover rounded">
@@ -138,9 +166,26 @@
                             </a>
                         </div>
                         
-                    </div>
+                        <div class="relative group">
+                            <button class="border border-cyan-600 hover:bg-gray-200 rounded-xl p-1 flex items-center">
+                                <span class="ml-2">Tecnologías</span>
+                                <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <ul class="p-2">
+                                    <li class="py-1 px-2 hover:bg-gray-100">Typescript</li>
+                                    <li class="py-1 px-2 hover:bg-gray-100">Express</li>
+                                    <li class="py-1 px-2 hover:bg-gray-100">CSS</li>
+                                    <li class="py-1 px-2 hover:bg-gray-100">React</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+
                 <div class="bg-white p-4 rounded shadow flex flex-col md:flex-row items-center space-x-10">
                     <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9c2e9d59-ee54-490e-bf96-5497f587844f/dggnza3-17d5904b-f58e-4918-8cb8-2606a436e428.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzljMmU5ZDU5LWVlNTQtNDkwZS1iZjk2LTU0OTdmNTg3ODQ0ZlwvZGdnbnphMy0xN2Q1OTA0Yi1mNThlLTQ5MTgtOGNiOC0yNjA2YTQzNmU0MjgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ofNCGOR7tlTuCj2j7r-GB_3JXMV8_qpeEmPgxI5cg0g" alt="Proyecto 4" 
                     class="w-full md:w-1/3 max-h-72 object-cover rounded">
@@ -161,10 +206,27 @@
                             </a>
                         </div>
                         
-                    </div>
+                        <div class="relative group">
+                            <button class="border border-cyan-600 hover:bg-gray-200 rounded-xl p-1 flex items-center">
+                                <span class="ml-2">Tecnologías</span>
+                                <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <ul class="p-2">
+                                    <li class="py-1 px-2 hover:bg-gray-100">Typescript</li>
+                                    <li class="py-1 px-2 hover:bg-gray-100">Tailwind</li>
+                                    <li class="py-1 px-2 hover:bg-gray-100">NextJs</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            </div>
+
         </section>
         
         
