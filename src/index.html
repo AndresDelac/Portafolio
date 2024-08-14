@@ -9,34 +9,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
 </head>
 
 
 <body class="bg-gray-100 text-gray-900">
-    <div class="fixed inset-0 -z-10 bg-gradient-to-br from-cyan-100 via-gray-200 to-green-100 blur-xl h-full w-full"></div>
+
+    <!-- ESTA PARTE ES DE AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- HTML NORMAL DE AQUI HACIA ABAJO -->
 
     
-    <header class=" text-white py-4">
-        <nav class="container mx-auto flex justify-center">
-            <ul class="flex space-x-4">
-                <li><a href="#about" class="text-gray-500 hover:text-black text-xl">Sobre mi</a></li>
-                <li><a href="#projects" class="text-gray-500 hover:text-black text-xl">Proyectos</a></li>
-                <li><a href="#tecnologias" class="text-gray-500 hover:text-black text-xl">Tecnologias</a></li>
+    <header class="fixed top-0 left-0 w-full py-4 z-50">
+        <nav class="container mx-auto flex justify-center p-3 w-[24vw] rounded-3xl border border-gray-600 bg-zinc-800">
+            <ul class="flex space-x-10">
+                <li><a href="#about" class="text-gray-200 font-quicksand hover:font-black duration-200 ease-linear text-xl">Sobre mi</a></li>
+                <li><a href="#projects" class="text-gray-200 font-quicksand hover:font-black duration-200 ease-linear text-xl">Proyectos</a></li>
+                <li><a href="#tecnologias" class="text-gray-200 font-quicksand hover:font-black duration-200 ease-linear text-xl">Tecnologias</a></li>
             </ul>
         </nav>
     </header>
-
+    
+    <div class="fixed inset-0 -z-10 bg-gradient-to-br from-cyan-100 via-gray-200 to-green-100 blur-xl h-full w-full"></div>
     <main class="container mx-auto p-4">
-        <section class="my-20  flex flex-col justify-center items-center">
+        
+        <section data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100" class="my-36 flex flex-col justify-center items-center">
             <h1 class="text-6xl font-quicksand font-bold">Hola, soy Andres</h1>
-            <p class="mt-16 text-3xl mx-96 text-center text-gray-600 font-sans font-medium ">Desarrollador web junior, con  <span class="text-cyan-500">especializacion en Front-end. </span><span class="text-green-500">De Cali, Colombia.</span> Apasionado por el mundo IT, gracias por estar aqui!</p>
-
+            <p class="mt-16 text-3xl mx-96 text-center text-gray-600 font-sans font-medium">
+                Desarrollador web junior, con <span class="text-cyan-500">especializacion en Front-end. </span>
+                <span class="text-green-500">De Cali, Colombia.</span> Apasionado por el mundo IT, ¡gracias por estar aquí!
+            </p>
+        
             <div class="mt-10 p-2 rounded-xl bg-green-400 hover:bg-green-300 duration-300 ease-in-out">
                <p class="font-quicksand text-base uppercase">Disponible para trabajar</p> 
             </div>
         </section>
 
-        <section class="flex flex-row justify-center space-x-10 my-10">
+        <section data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400" class="flex flex-row justify-center space-x-10 my-10">
             <a href="https://www.linkedin.com/in/hugo-andres-de-la-cruz-oyola-0b9b20289/">
             <div class="mt-10 flex flex-row border border-cyan-500 hover:bg-gray-100 duration-300 ease-in-out p-3 rounded-3xl max-w-56 max-h-10 items-center text-xl">
                 <svg 
@@ -70,9 +90,47 @@
                 hugoandres2205@gmail.com
             </div>
         </section>
+
+        <section id="about" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200" class="my-60">
+            
+            
+            <div class="flex flex-row items-center space-x-6">
+                <svg 
+                class="h-12 w-10 m-2"
+                xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 448 512">
+                <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z"/>
+            </svg>
+            <h1 class="text-4xl font-quicksand font-bold my-10">Sobre mi</h1>
+        </div>
+        
+        <div class="flex flex-row space-x-40">
+            <div class="max-w-[40vw] font-quicksand text-xl space-y-5">
+                <p>
+                    Mi nombre es Hugo Andres De la Cruz y tengo 18 años. Desde pequeño, he estado apasionado por la tecnología y siempre me ha fascinado cómo funcionan las cosas. Pasaba horas viendo videos sobre temas tecnológicos.
+                </p>
+
+                <p>
+                    En mi adolescencia, mi amor por la tecnología creció aún más cuando tuve mi primer contacto con la programación en la secundaria. Aprendí HTML básico, lógica de programación y fundamentos de programación orientada a objetos.
+                </p>
+
+                <p>
+                    Al graduarme, decidí dedicar mi vida a la tecnología. Intenté ingresar a la universidad para estudiar Ingeniería de Software, pero no pude debido a problemas de gestión de documentos (aun planeo entrar). Sin embargo, encontré muchos cursos en línea y el Bootcamp de Henry fue el que más me llamó la atención
+                </p>
+
+                <p>
+                    Me uní a este Bootcamp, y aunque fue desafiante aprender a programar, logré superar todas las tareas, proyectos y exámenes, y me gradué. Ahora, sigo estudiando de forma autodidacta en este apasionante mundo tecnológico.
+                </p>
+            </div>
+            <p>
+                <img data-aos="zoom-in" data-aos-delay="600" src="assets/foto sin fondo.jpg" alt="foto" class="h-[28vw] rounded-3xl">
+            </p>
+        </div>
+
+        </section>
          
-        <section id="projects" class="my-24">
-            <div class="flex flex-row space-x-5 items-center">
+        <section id="projects" class="my-48">
+            <div data-aos="zoom-in" data-aos-duration="1500" data-aos-duration="2000" data-aos-delay="150" class="flex flex-row space-x-5 items-center">
 
                 <svg 
                 class="h-10 w-10 m-2"
@@ -85,8 +143,11 @@
             </div>
 
             <div class="flex flex-col gap-4 mt-5 mx-12 space-y-16">
-                <div class="bg-white p-4 rounded shadow flex flex-col md:flex-row items-center space-x-10 ">
-                    <img src="assets/paginaPersonal.png" alt="Proyecto 1" 
+
+                <div data-aos="fade-up-left" data-aos-duration="1500" data-aos-duration="3000" data-aos-delay="1000"
+                 class="bg-white p-4 rounded shadow flex flex-col md:flex-row items-center space-x-10 ">
+
+                    <img  src="assets/paginaPersonal.png" alt="Proyecto 1" 
                     class="w-full md:w-1/3 max-h-72 h-72 object-cover rounded">
                     <div class="mt-4 md:mt-0 md:ml-4 ">
                         <div class="flex flex-row space-x-80">
@@ -129,7 +190,9 @@
                 </div>
             </div>
 
-                <div class="bg-white p-4 rounded shadow flex flex-col md:flex-row items-center space-x-10">
+                <div data-aos="fade-down-right" data-aos-duration="1500" data-aos-duration="3000" data-aos-delay="1000"
+                 class="bg-white p-4 rounded shadow flex flex-col md:flex-row items-center space-x-10">
+
                     <img src="assets/webPeliculas.png" alt="Proyecto 2" 
                     class="w-full md:w-1/3 max-h-72 h-72 object-cover rounded">
                     <div class="mt-4 md:mt-0 md:ml-4">
@@ -171,7 +234,9 @@
                 </div>
         
 
-                <div class="bg-white p-4 rounded shadow flex flex-col md:flex-row items-center space-x-10">
+                <div data-aos="fade-up-left" data-aos-duration="1500" data-aos-duration="3000" data-aos-delay="1000"
+                 class="bg-white p-4 rounded shadow flex flex-col md:flex-row items-center space-x-10">
+                 
                     <img src="assets/gestorTurnos.png" alt="Proyecto 3" 
                     class="w-full md:w-1/3 max-h-72 h-72 object-cover rounded">
                     <div class="mt-4 md:mt-0 md:ml-4">
@@ -214,7 +279,9 @@
                 </div>
             </div>
 
-                <div class="bg-white p-4 rounded shadow flex flex-col md:flex-row items-center space-x-10">
+                <div  data-aos="fade-down-right" data-aos-duration="1500" data-aos-duration="3000" data-aos-delay="1000"
+                 class="bg-white p-4 rounded shadow flex flex-col md:flex-row items-center space-x-10">
+
                     <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9c2e9d59-ee54-490e-bf96-5497f587844f/dggnza3-17d5904b-f58e-4918-8cb8-2606a436e428.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzljMmU5ZDU5LWVlNTQtNDkwZS1iZjk2LTU0OTdmNTg3ODQ0ZlwvZGdnbnphMy0xN2Q1OTA0Yi1mNThlLTQ5MTgtOGNiOC0yNjA2YTQzNmU0MjgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ofNCGOR7tlTuCj2j7r-GB_3JXMV8_qpeEmPgxI5cg0g" alt="Proyecto 4" 
                     class="w-full md:w-1/3 max-h-72 h-72 object-cover rounded">
                     <div class="mt-4 md:mt-0 md:ml-4">
@@ -261,47 +328,8 @@
 
         </section>
         
-        
-        
-        <section id="about" class="my-24">
-            
-            
-            <div class="flex flex-row items-center space-x-6">
-                <svg 
-                class="h-12 w-10 m-2"
-                xmlns="http://www.w3.org/2000/svg" 
-                viewBox="0 0 448 512">
-                <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z"/>
-            </svg>
-            <h1 class="text-4xl font-quicksand font-bold my-10">Sobre mi</h1>
-        </div>
-        
-        <div class="flex flex-row space-x-40">
-            <div class="max-w-[40vw] font-quicksand text-xl space-y-5">
-                <p>
-                    Mi nombre es Hugo Andres De la Cruz y tengo 18 años. Desde pequeño, he estado apasionado por la tecnología y siempre me ha fascinado cómo funcionan las cosas. Pasaba horas viendo videos sobre temas tecnológicos.
-                </p>
 
-                <p>
-                    En mi adolescencia, mi amor por la tecnología creció aún más cuando tuve mi primer contacto con la programación en la secundaria. Aprendí HTML básico, lógica de programación y fundamentos de programación orientada a objetos.
-                </p>
-
-                <p>
-                    Al graduarme, decidí dedicar mi vida a la tecnología. Intenté ingresar a la universidad para estudiar Ingeniería de Software, pero no pude debido a problemas de gestión de documentos (aun planeo entrar). Sin embargo, encontré muchos cursos en línea y el Bootcamp de Henry fue el que más me llamó la atención
-                </p>
-
-                <p>
-                    Me uní a este Bootcamp, y aunque fue desafiante aprender a programar, logré superar todas las tareas, proyectos y exámenes, y me gradué. Ahora, sigo estudiando de forma autodidacta en este apasionante mundo tecnológico.
-                </p>
-            </div>
-            <p>
-                <img src="assets/foto sin fondo.jpg" alt="foto" class="h-[28vw] rounded-3xl">
-            </p>
-        </div>
-
-        </section>
-
-        <section id="tecnologias" class="my-24">
+        <section id="tecnologias" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="200" class="my-48">
             <div class="flex flex-row items-center space-x-4">
                 <svg 
                 class="h-8 w-8 m-2"
@@ -365,7 +393,7 @@
 
     </main>
 
-    <footer class="bg-gray-700 text-white py-6">
+    <footer class="bg-zinc-800 text-white py-6">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <div class="mb-4 md:mb-0">
                 <p>&copy; 2024 Hugo Andres. Mas o menos todos los derechos reservados.</p>
